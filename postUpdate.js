@@ -15,7 +15,10 @@ const parser = new Parser({
         const currentTimeStamp = new Date().getTime();
 
         if(pubTimeStamp > currentTimeStamp - 1000 * 60 * 60) {
+            console.log('생성될 게시글: ', title);
             writeFileSync(`${title}.md`, content, 'utf8');
+        } else {
+            console.log('배포시간 벗어난 게시글: ', title);
         }
     }
 })();
