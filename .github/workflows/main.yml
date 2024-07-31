@@ -20,11 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Update Post
-        run: npm start
+        run: node postUpdate
       - name: Commit Post
         run: |
           git add .
-          git config --local user.email worldsource93
-          git config --local user.name Won
+          git config --local user.email "worldsource93@naver.com"
+          git config --local user.name "Won"
           git commit -m "Update Tistory Blog Post"
           git push
