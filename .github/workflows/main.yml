@@ -27,4 +27,4 @@ jobs:
           git config --local user.email "worldsource93@naver.com"
           git config --local user.name "Won"
           git commit -m "Update Tistory Blog Post"
-          git push
+          git push origin main
