@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Update Post
-        run: node postUpdate
+        run: npm start
       - name: Commit Post
         run: |
           git add .
