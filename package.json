@@ -1,0 +1,16 @@
+{
+  "name": "tistory2github",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node postUpdate.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
