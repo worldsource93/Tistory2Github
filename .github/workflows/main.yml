@@ -5,6 +5,9 @@ name: Update Tistory Blog Post
 # Controls when the workflow will run
 on:
 # 1시간에 한번씩 아래 스크립트를 실행한다.
+  push:
+      branches:
+        - main
   schedule:
     # - cron: "0 */1 * * *"
     - cron: "* * * * *"
