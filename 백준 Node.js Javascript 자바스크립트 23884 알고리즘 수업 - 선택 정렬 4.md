@@ -1,11 +1,8 @@
-<blockquote data-ke-style="style3"><b>  <span style="color: #006dd7;">요구사항</span></b><br />- 뒤에서부터 선택 정렬<br />- 서로 스왑하는 경우에 카운트<br />- K번째 스왑을 하는 경우, 스왑 직후 서로 교환한 숫자를 작은 순서대로 출력<br />- 스왑횟수가 K번 미만일 경우, -1을 출력<br />- 크기가 매우 커서 시간 초과를 고민</blockquote>
+<blockquote data-ke-style="style3"><span style="color: #006dd7;"><b> &nbsp;요구사항</b></span><br />- 뒤에서부터 선택 정렬<br />- 서로 스왑하는 경우에 카운트<br />- K번째 스왑을 하는 경우, 스왑 직후 배열을 출력<br />- 스왑횟수가 K번 미만일 경우, -1을 출력<br />- 크기가 매우 커서 시간 초과를 고민</blockquote>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span style="color: #ef5369;"><b>주의사항</b></span></p>
-<p data-ke-size="size16">배열의 크기가 최대 50만이므로 O(N^2) 방식으로는 풀리지 않는다.</p>
-<p data-ke-size="size16">O(N log N) 방식으로 풀어야한다.</p>
-<p data-ke-size="size16">효율적인 방식을 고민해보자.</p>
-<p data-ke-size="size16">&nbsp;</p>
-<pre id="code_1722482390173" class="javascript" data-ke-language="javascript" data-ke-type="codeblock"><code>let fs = require('fs');
+<p data-ke-size="size16">앞선 3번 문제에서 변경된 내용은 출력 형태만 변경되었다.</p>
+<p data-ke-size="size16">스왑 직후, 스왑한 숫자를 작은 순서대로 출력 -&gt; 스왑 직후 배열을 출력</p>
+<pre id="code_1722483659967" class="javascript" data-ke-language="javascript" data-ke-type="codeblock"><code>let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 const condition = input[0].split(' ').map(Number);
@@ -40,7 +37,7 @@ const solution = (c, arr) =&gt; {
 			positions[MAX] = i;
 			cnt += 1;
 			if (cnt === count) {
-				console.log(MIN, MAX);
+				console.log(arr.join(' '));
 				break;
 			}
 		}
@@ -51,4 +48,4 @@ const solution = (c, arr) =&gt; {
 solution(condition, array);</code></pre>
 <p data-ke-size="size16">&nbsp;</p>
 <p data-ke-size="size16"><span style="color: #009a87;"><b> 문제 출처</b></span></p>
-<p style="background-color: #ffffff; color: #353638; text-align: left;" data-ke-size="size16"><span style="color: #009a87;"><b><a href="https://www.acmicpc.net/problem/23882">https://www.acmicpc.net/problem/23883</a></b></span></p>
+<p style="background-color: #ffffff; color: #353638; text-align: left;" data-ke-size="size16"><span style="color: #009a87;"><b><a href="https://www.acmicpc.net/problem/23883">https://www.acmicpc.net/problem/23884</a></b></span></p>
