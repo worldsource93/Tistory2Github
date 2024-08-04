@@ -25,6 +25,6 @@ jobs:
         run: |
           git add .
           git config --local user.email "worldsource93@naver.com"
-          git config --local user.name "Won"
+          git config --local user.name "worldsource93"
           git commit -m "Update Tistory Blog Post"
           git push origin main
